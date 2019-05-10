@@ -158,9 +158,10 @@ def get_id_name():
             #except:
              #   with open("bad_site.json","a+") as f1:
               #      f1.write(json.dumps(item,ensure_ascii=False) + "\n")
-get_id_name()
-```
+get_id_name()```
+
 相关微博信息的存储格式是：
+
 ```YAML
 {
 	[
@@ -238,6 +239,7 @@ class Downloader:
 down = Downloader()
 down.open_file()
 ```
+
 存储结构：`D:\时间\站子名称`
 
 ## 结果展示
