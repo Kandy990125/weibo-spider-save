@@ -85,7 +85,8 @@ get_site_name()```
 		uname:<site_name>,
 		uid:<uid>
 		},...
-]```
+]
+```
 
 ## step2：根据微博主页URL获取包含图片的微博信息
 
@@ -164,26 +165,27 @@ get_id_name()```
 
 ```YAML
 {
-	[
-		{
-			uname:<site_name>,
-			uid:<site_id>,
-			infos:[
-				{
-					id:<weibo_id>,
-					text:<weibo_content>,
-					time:<created_time>,
-					pics:[picid,picid,...]
-				}
-			]
-		}
-	],...
+  [
+    {  
+      uname:<site_name>,
+      uid:<site_id>,
+      infos:[
+      {
+        id:<weibo_id>,
+	text:<weibo_content>,
+	time:<created_time>,
+	pics:[picid,picid,...]
+	}
+       ]
+     }
+   ],...
 }
 ```
 
 ## step3：通过PID，下载图片
 
 具体代码如下：
+
 ```Python
 # -*- coding: UTF-8 -*-
 import requests
