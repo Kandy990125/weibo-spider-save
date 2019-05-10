@@ -1,0 +1,5 @@
+# -*- coding: UTF-8 -*-
+import re
+s = '<a  href="https://m.weibo.cn/p/index?containerid=10080858e08feaba348e3a31231d8820e746b9&extparam=%E6%9E%97%E5%BD%A6%E4%BF%8A&luicode=10000011&lfid=1076036482581401" data-hide=""><span class="url-icon"><img style="width: 1rem;height: 1rem" src="http://n.sinaimg.cn/photo/5213b46e/20181127/timeline_card_small_super_default.png"></span><span class="surl-text">林彦俊</span></a> ｜<a  href="https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E6%9E%97%E5%BD%A6%E4%BF%8AESCAPE.%23&extparam=%23%E6%9E%97%E5%BD%A6%E4%BF%8AESCAPE.%23&luicode=10000011&lfid=1076036482581401" data-hide=""><span class="surl-text">#林彦俊ESCAPE.#</span></a> <br /><br />190505<br />辛苦惹<span class="url-icon"><img alt=[米奇大哭] src="//h5.sinaimg.cn/m/emoticon/icon/movies/mickey_04-a83158a2fe.png" style="width:1em; height:1em;" /></span><br /><br /><a href="/n/林彦俊">@林彦俊</a> '
+for i in re.findall(r"\">(.+?)</", s):
+    print(i)
