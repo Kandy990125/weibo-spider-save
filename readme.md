@@ -72,7 +72,8 @@ def get_site_url(name):
     except:
         return 200
 
-get_site_name()```
+get_site_name()
+```
 
 以如下方式进行存储。
 
@@ -159,7 +160,8 @@ def get_id_name():
             #except:
              #   with open("bad_site.json","a+") as f1:
               #      f1.write(json.dumps(item,ensure_ascii=False) + "\n")
-get_id_name()```
+get_id_name()
+```
 
 相关微博信息的存储格式是：
 
@@ -262,6 +264,9 @@ down.open_file()
 
 文章中所述的爬虫代码有个bug就是其中的编码问题
 欢迎大家在下方评论区随时交流指正
+
 微博：麦不辣鸡腿堡
+
 Github：Kandy990125
+
 E-mail：kandy990125@gmail.com
